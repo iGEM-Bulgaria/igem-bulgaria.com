@@ -1,6 +1,7 @@
+
+<h1 align="center">The <a href="http://igem-bulgaria.com">iGEM-Bulgaria</a> website</h2>
 <p align="center">
-    # The [iGEM-Bulgaria](http://igem-bulgaria.com) website
-    <img src="http://igem-bulgaria.com/assets/images/logo_small.png"/>
+  <a href="http://igem-bulgaria.com" align="center"><img src="http://igem-bulgaria.com/assets/images/logo_small.png"/></a>
 </p>
 
 # Development requirements
