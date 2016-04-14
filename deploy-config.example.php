@@ -28,7 +28,7 @@ define('SECRET_ACCESS_TOKEN', 'BetterChangeMeNowOrSufferTheConsequences');
  *
  * @var string
  */
-define('REMOTE_REPOSITORY', 'https://github.com/markomarkovic/simple-php-git-deploy.git');
+define('REMOTE_REPOSITORY', 'https://github.com/iGEM-Bulgaria/igem-bulgaria.com');
 
 /**
  * The branch that's being deployed.
@@ -44,7 +44,7 @@ define('BRANCH', 'master');
  *
  * @var string Full path including the trailing slash
  */
-define('TARGET_DIR', '/tmp/simple-php-git-deploy/');
+define('TARGET_DIR', '/PATH_TO/igem-bulgaria.com/');
 
 /**
  * Whether to delete the files that are not in the repository but are on the
@@ -68,7 +68,10 @@ define('DELETE_FILES', false);
  * @var serialized array of strings
  */
 define('EXCLUDE', serialize(array(
-	'.git',
+  '.git',
+  '.gitignore',
+  'README.md',
+  'deploy-config.example.php'
 )));
 
 /**
@@ -93,7 +96,7 @@ define('CLEAN_UP', true);
  *
  * @var string Full path to the file name
  */
-define('VERSION_FILE', TMP_DIR.'VERSION');
+define('VERSION_FILE', TMP_DIR.'public/VERSION.txt');
 
 /**
  * Time limit for each command.
@@ -146,4 +149,4 @@ define('COMPOSER_HOME', false);
  *
  * @var string Email address
  */
-define('EMAIL_ON_ERROR', false);
+define('EMAIL_ON_ERROR', 'team@igem-bulgaria.com');
