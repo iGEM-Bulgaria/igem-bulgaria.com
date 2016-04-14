@@ -28,6 +28,6 @@
 
 # Credits
 
-- [Kite hTML5 theme by Jewel Theme](https://jeweltheme.com/product/kite/)
-- [jquery-circle-progress by kottenator](https://github.com/kottenator/jquery-circle-progress)
-- [php-i18n by Philipp15b](https://github.com/Philipp15b/php-i18n)
+- [**Kite HTML5 theme** by Jewel Theme](https://jeweltheme.com/product/kite/)
+- [**jquery-circle-progress** by kottenator](https://github.com/kottenator/jquery-circle-progress)
+- [**php-i18n** by Philipp15b](https://github.com/Philipp15b/php-i18n)
