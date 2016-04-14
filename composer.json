@@ -1,0 +1,5 @@
+{
+  "require": {
+    "Philipp15b/php-i18n": "3.0.*"
+  }
+}

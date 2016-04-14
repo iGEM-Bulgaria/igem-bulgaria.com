@@ -1,0 +1,71 @@
+{
+  "head": {
+    "title": "iGEM Bulgaria",
+    "description": "The iGEM Bulgaria Project",
+    "keywords": "iGEM,Bulgaria",
+    "author": "iGEM Bulgaria",
+    "url": "http://igem-bulgaria.com"
+  },
+  "menu": {
+    "toggle": "Toggle navigation",
+    "home": "Home",
+    "team": "Team",
+    "about": "About",
+    "donations": "Donations",
+    "contact": "Contact"
+  },
+  "home": {
+    "section_name": "We are",
+    "section_title": "iGEM - Bulgaria"
+  },
+  "team": {
+    "section_name": "Meet the team",
+    "section_title": "We are dedicated",
+    "section_description": "Our Team is passioned, motivated and we love what we do!"
+  },
+  "about": {
+    "section_name": "Learn more",
+    "section_title": "About us",
+    "textp1": "The international <a href='http://igem.org/' target='_blank'>iGEM competition</a> (international genetically engineered machines) allows students from all around the world to experience the endlessly amazing world of synthetical biology. The participants have the opportunity to use and experiment with the newest and most exciting technologies in the fields of molecular biology and genetics. This way they can accomplish even their wildest dreams in the area of biological engineering and propose solutions to many trending humanity problems in medicine, ecology, energetics, livelihood etc. Meanwhile, these young people get to know the not less exciting aspect of organizing teams, finding sponsorships and successfully completing high-tech projects. The grand finals in Boston only amplify the whole experience where thousands of brave and talented students from all around the globe showcase their work and celebrate their achievements.",
+    "textp2": "iGEM Bulgaria aims to help in all ways possible the founding and financing of Bulgarian teams in this prestigious competition and also to present their activities in front of the society. We are certain that we Bulgarians are capable of competing equally with the best in the world of science and technologies and even overperform them. We are striving to give the young Bulgarians a chance to unfold their potential in our homeland and we hope that many of them will stay and be enterprising and active citizens, which will help in building a better Bulgaria."
+  },
+  "donations": {
+    "section_name": "Help us succeed",
+    "section_title": "Donations",
+    "list1": "Form the team",
+    "list2": "<a href='http://2016.igem.org/Requirements' target='_blank'>Registration tax (<strong>5000$</strong>)</a>",
+    "list3": "Bio material and tech costs",
+    "list4": "Travel costs",
+    "bank_title": "Donate via bank transaction:",
+    "bank_details": "Technical University Sofia \"Technology Ltd.\"<br><br>Eurobank Bulgaria AD<br>bul. \"Kliment Ohridski\" 8<br>BIC: BPBIBGSF<br>IBAN-BGL: BG89 BPBI 79401 04613 9702<br>IBAN-EURO: BG89 BPBI 79401 44613 9701<br>",
+    "bank_reason": "Transaction reason:<br>\"For the iGEM Bulgaria team\"",
+    "paypal_title": "Donate via PayPal:"
+  },
+  "contact": {
+    "section_name": "Contact",
+    "section_title": "Get in touch",
+    "section_description": "Feel free to drop us an email at any time on <a href='mailto:team@igem-bulgaria.com'>team@igem-bulgaria.com</a><br>or find us at: <br>",
+    "address": "<address class='text-center'>Technical University of Sofia<br>room 3229<br>1000 Sofia, Bulgaria</address>",
+    "members": {
+      "mario": {
+        "name": "Mario Markov",
+        "role": "Team leader"
+      },
+      "boris": {
+        "name": "Boris Kirov",
+        "role": "Coach"
+      },
+      "jenny": {
+        "name": "Jenny Pavlova",
+        "role": "Technical leader"
+      },
+      "angel": {
+        "name": "Angel Mehandzhiyski",
+        "role": "Biological leader"
+      }
+    }
+  },
+  "foot": {
+    "copyright": "All Rights Reserved"
+  }
+}
