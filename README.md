@@ -25,6 +25,7 @@
     </VirtualHost>
     ```
 (Note that the document root is in the `/public` subfolder rather than the repo's root)
+- Clone `deploy-config.example.php` into `deploy-config.php` and edit accordingly to the server you want to deploy on
 
 # Credits
 
