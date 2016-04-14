@@ -526,7 +526,6 @@ a:focus{
 	bottom:2px;
 }
 #page-top .pattern {
-	min-height: 100vh;
 	padding-top: 100px;
 }
 
@@ -798,7 +797,6 @@ form.news-letter .btn:hover{
 	color:#3498db;
 }
 #about .pattern {
-	min-height: 100vh;
 	padding-bottom: 50px;
 }
 #about-loading {
@@ -1258,6 +1256,10 @@ background: #00aaff;
 
 /* 10 - Preloader End
 ---------------------------------------------------------------------- */
+
+.pattern {
+	min-height: 100vh;
+}
 
 .donation-title {
 	padding: 20px 0px;
