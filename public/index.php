@@ -239,7 +239,7 @@
     <!-- about Section End -->
 
     <!-- donations Section -->
-    <section id="donations" class="section-style" data-background-image="assets/images/background/team.jpg">
+    <section id="donations" class="section-style" data-background-image="assets/images/background/donations.jpg">
       <div class="pattern height-resize">
         <div class="container">
           <h3 class="section-name">

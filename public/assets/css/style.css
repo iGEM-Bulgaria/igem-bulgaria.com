@@ -797,6 +797,7 @@ form.news-letter .btn:hover{
 	color:#3498db;
 }
 #about .pattern {
+	background: rgba(0,0,0,.8);
 	padding-bottom: 50px;
 }
 #about-loading {
