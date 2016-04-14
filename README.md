@@ -1,6 +1,7 @@
+
+<h1 align="center">The <a href="http://igem-bulgaria.com">iGEM-Bulgaria</a> website</h2>
 <p align="center">
-    # The [iGEM-Bulgaria](http://igem-bulgaria.com) website
-    <img src="http://igem-bulgaria.com/assets/images/logo_small.png"/>
+  <a href="http://igem-bulgaria.com" align="center"><img src="http://igem-bulgaria.com/assets/images/logo_small.png"/></a>
 </p>
 
 # Development requirements
@@ -27,6 +28,6 @@
 
 # Credits
 
-- [Kite hTML5 theme by Jewel Theme](https://jeweltheme.com/product/kite/)
-- [jquery-circle-progress by kottenator](https://github.com/kottenator/jquery-circle-progress)
-- [php-i18n by Philipp15b](https://github.com/Philipp15b/php-i18n)
+- [**Kite HTML5 theme** by Jewel Theme](https://jeweltheme.com/product/kite/)
+- [**jquery-circle-progress** by kottenator](https://github.com/kottenator/jquery-circle-progress)
+- [**php-i18n** by Philipp15b](https://github.com/Philipp15b/php-i18n)
