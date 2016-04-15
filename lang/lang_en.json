@@ -37,8 +37,8 @@
     "list3": "Bio material and tech costs",
     "list4": "Travel costs",
     "bank_title": "Donate via bank transaction:",
-    "bank_details": "Technical University Sofia \"Technology Ltd.\"<br><br>Eurobank Bulgaria AD<br>bul. \"Kliment Ohridski\" 8<br>BIC: BPBIBGSF<br>IBAN-BGL: BG89 BPBI 79401 04613 9702<br>IBAN-EURO: BG89 BPBI 79401 44613 9701<br>",
-    "bank_reason": "Transaction reason:<br>\"For the iGEM Bulgaria team\"",
+    "bank_details": "IGEM BULGARIA<br><br>First Investment Bank AD<br>bul. \"Dragan Tsankov\" №37<br>BIC: FINVBGSF<br>IBAN - BGN: BG35FINV91501216732479<br>IBAN - USD: BG12FINV91501216732505",
+    "bank_reason": "Transaction reason:<br>Feel free to write what you choose. Leave your email and receive a free subscription to exclusive news and videos from the iGEM Bulgaria world!",
     "paypal_title": "Donate via PayPal:"
   },
   "contact": {
