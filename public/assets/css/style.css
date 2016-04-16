@@ -1312,6 +1312,10 @@ background: #00aaff;
 	margin-top:20px;
 }
 
+/* Slider */
 .flipster__nav {
 	display: none !important;
+}
+.flipster {
+    overflow-y: hidden !important;
 }
