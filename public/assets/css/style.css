@@ -972,16 +972,22 @@ form.news-letter .btn:hover{
 
 /* 9.1 - media screen and (max-width: 992px)
 ------------------------------------------------ */
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px) and (min-width: 768px){
 	.container{
 		width:100%;
 		max-width:830px;
+	}
+	.team-photos{
+		width: 600px !important;
 	}
 }
 @media (min-width: 992px){
 	.container{
 		width:100%;
 		max-width:830px;
+	}
+	.team-photos{
+		width: 600px;
 	}
 }
 
@@ -1014,6 +1020,9 @@ form.news-letter .btn:hover{
 		#contact-form  .btn{
 	border-left:1px solid #fff;
 	}
+	.team-photos{
+		width: 300px;
+	}
 }
 
 /* 9.2 - media screen and (max-width: 768px) End
@@ -1025,6 +1034,9 @@ form.news-letter .btn:hover{
 @media (min-width: 1170px){
 	.container{
 		width:830px;
+	}
+	.team-photos{
+		width: 600px;
 	}
 }
 /* 9.3 - media screen and (max-width: 1170px) End
@@ -1298,4 +1310,8 @@ background: #00aaff;
 
 #headerlanguage {
 	margin-top:20px;
+}
+
+.flipster__nav {
+	display: none !important;
 }

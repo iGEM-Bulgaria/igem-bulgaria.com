@@ -50,6 +50,7 @@
 
     <!-- Custom Styles -->
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/jquery.flipster.min.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
@@ -216,7 +217,20 @@
           <p class="section-description">
             <?=L::team_section_description?>
           </p><!-- /.section-description -->
-          <img id="team-photo" src="assets/images/team/team.jpg">
+          <!-- Team Slider -->
+          <div id="carousel">
+              <ul class="flip-items">
+                  <li class = "team-photos" data-flip-title="Team1" data-flip-category="Purples">
+                      <img src="assets/images/team/team3.jpg">
+                   </li>
+                  <li class = "team-photos" data-flip-title="Team3" data-flip-category="Yellows">
+                      <img src="assets/images/team/team.jpg">
+                  </li>
+                  <li class = "team-photos" data-flip-title="Team2" data-flip-category="Purples">
+                      <img src="assets/images/team/team6.jpg">
+                  </li>
+              </ul>
+          </div>
 
           <div class="next-section">
             <a class="go-to-about"><span></span></a>
@@ -517,6 +531,17 @@
     <script type="text/javascript" src="assets/js/functions.js"></script>
     <!-- Custom JavaScript Functions -->
     <script type="text/javascript" src="assets/js/circle-progress.js"></script>
+    <!-- Slider Javascript Functions -->
+    <script src="assets/js/jquery.flipster.min.js"></script>
+    
+    <script>
+        var carousel = $("#carousel").flipster({
+            style: 'carousel',
+            spacing: -0.5,
+            nav: true,
+            buttons:   true,
+        });
+    </script>
 
     <script>
       var currentAmmount = 177;
