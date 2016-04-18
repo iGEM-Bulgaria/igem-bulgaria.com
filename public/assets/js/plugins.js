@@ -291,9 +291,147 @@
  */
 //    !function(a){"function"==typeof define&&define.amd?define(["jquery"],a):a(jQuery)}(function(a){"use strict";function b(a){if(a instanceof Date)return a;if(String(a).match(g))return String(a).match(/^[0-9]*$/)&&(a=Number(a)),new Date(a);throw new Error("Couldn't cast `"+a+"` to a date object.")}function c(a){return function(b){var c=b.match(/%(-|!)?[A-Z]{1}(:[^;]+;)?/gi);if(c)for(var e=0,f=c.length;f>e;++e){var g=c[e].match(/%(-|!)?([a-zA-Z]{1})(:[^;]+;)?/),i=new RegExp(g[0]),j=g[1]||"",k=g[3]||"",l=null;g=g[2],h.hasOwnProperty(g)&&(l=h[g],l=Number(a[l])),null!==l&&("!"===j&&(l=d(k,l)),""===j&&10>l&&(l="0"+l.toString()),b=b.replace(i,l.toString()))}return b=b.replace(/%%/,"%")}}function d(a,b){var c="s",d="";return a&&(a=a.replace(/(:|;|\s)/gi,"").split(/\,/),1===a.length?c=a[0]:(d=a[0],c=a[1])),1===Math.abs(b)?d:c}var e=100,f=[],g=[];g.push(/^[0-9]*$/.source),g.push(/([0-9]{1,2}\/){2}[0-9]{4}( [0-9]{1,2}(:[0-9]{2}){2})?/.source),g.push(/[0-9]{4}(\/[0-9]{1,2}){2}( [0-9]{1,2}(:[0-9]{2}){2})?/.source),g=new RegExp(g.join("|"));var h={Y:"years",m:"months",w:"weeks",d:"days",D:"totalDays",H:"hours",M:"minutes",S:"seconds"},i=function(b,c,d){this.el=b,this.$el=a(b),this.interval=null,this.offset={},this.setFinalDate(c),this.instanceNumber=f.length,f.push(this),this.$el.data("countdown-instance",this.instanceNumber),d&&(this.$el.on("update.countdown",d),this.$el.on("stoped.countdown",d),this.$el.on("finish.countdown",d)),this.start()};a.extend(i.prototype,{start:function(){if(null!==this.interval)throw new Error("Countdown is already running!");var a=this;this.update(),this.interval=setInterval(function(){a.update.call(a)},e)},stop:function(){clearInterval(this.interval),this.interval=null,this.dispatchEvent("stoped")},pause:function(){this.stop.call(this)},resume:function(){this.start.call(this)},remove:function(){this.stop(),delete f[this.instanceNumber]},setFinalDate:function(a){this.finalDate=b(a)},update:function(){return 0===this.$el.closest("html").length?(this.remove(),void 0):(this.totalSecsLeft=this.finalDate.valueOf()-(new Date).valueOf(),this.totalSecsLeft=Math.ceil(this.totalSecsLeft/1e3),this.totalSecsLeft=this.totalSecsLeft<0?0:this.totalSecsLeft,this.offset={seconds:this.totalSecsLeft%60,minutes:Math.floor(this.totalSecsLeft/60)%60,hours:Math.floor(this.totalSecsLeft/60/60)%24,days:Math.floor(this.totalSecsLeft/60/60/24)%7,totalDays:Math.floor(this.totalSecsLeft/60/60/24),weeks:Math.floor(this.totalSecsLeft/60/60/24/7),months:Math.floor(this.totalSecsLeft/60/60/24/30),years:Math.floor(this.totalSecsLeft/60/60/24/365)},0===this.totalSecsLeft?(this.stop(),this.dispatchEvent("finish")):this.dispatchEvent("update"),void 0)},dispatchEvent:function(b){var d=a.Event(b+".countdown");d.finalDate=this.finalDate,d.offset=a.extend({},this.offset),d.strftime=c(this.offset),this.$el.trigger(d)}}),a.fn.countdown=function(){var b=Array.prototype.slice.call(arguments,0);return this.each(function(){var c=a(this).data("countdown-instance");if(void 0!==c){var d=f[c],e=b[0];i.prototype.hasOwnProperty(e)?d[e].apply(d,b.slice(1)):null===String(e).match(/^[$A-Z_][0-9A-Z_$]*$/i)?d.setFinalDate.call(d,e):a.error("Method %s does not exist on jQuery.countdown".replace(/\%s/gi,e))}else new i(this,b[0],b[1])})}});
 
+
 /*  countdown.min.js  End
 ------------------------------------------------------------------------------*/
+(function($){
 
+  $.fn.countDown = function (options) {
+
+    config = {};
+
+    $.extend(config, options);
+
+    diffSecs = this.setCountDown(config);
+  
+    if (config.onComplete)
+    {
+      $.data($(this)[0], 'callback', config.onComplete);
+    }
+    if (config.omitWeeks)
+    {
+      $.data($(this)[0], 'omitWeeks', config.omitWeeks);
+    }
+
+    $('#' + $(this).attr('id') + ' .digit').html('<div class="top"></div><div class="bottom"></div>');
+    $(this).doCountDown($(this).attr('id'), diffSecs, 500);
+
+    return this;
+
+  };
+
+  $.fn.stopCountDown = function () {
+    clearTimeout($.data(this[0], 'timer'));
+  };
+
+  $.fn.startCountDown = function () {
+    this.doCountDown($(this).attr('id'),$.data(this[0], 'diffSecs'), 500);
+  };
+
+  $.fn.setCountDown = function (options) {
+    var targetTime = new Date();
+
+    if (options.targetDate)
+    {
+      targetTime = new Date(options.targetDate.month + '/' + options.targetDate.day + '/' + options.targetDate.year + ' ' + options.targetDate.hour + ':' + options.targetDate.min + ':' + options.targetDate.sec + (options.targetDate.utc ? ' UTC' : ''));
+    }
+    else if (options.targetOffset)
+    {
+      targetTime.setFullYear(options.targetOffset.year + targetTime.getFullYear());
+      targetTime.setMonth(options.targetOffset.month + targetTime.getMonth());
+      targetTime.setDate(options.targetOffset.day + targetTime.getDate());
+      targetTime.setHours(options.targetOffset.hour + targetTime.getHours());
+      targetTime.setMinutes(options.targetOffset.min + targetTime.getMinutes());
+      targetTime.setSeconds(options.targetOffset.sec + targetTime.getSeconds());
+    }
+
+    var nowTime = new Date();
+
+    diffSecs = Math.floor((targetTime.valueOf()-nowTime.valueOf())/1000);
+
+    $.data(this[0], 'diffSecs', diffSecs);
+
+    return diffSecs;
+  };
+
+  $.fn.doCountDown = function (id, diffSecs, duration) {
+    $this = $('#' + id);
+    if (diffSecs <= 0)
+    {
+      diffSecs = 0;
+      if ($.data($this[0], 'timer'))
+      {
+        clearTimeout($.data($this[0], 'timer'));
+      }
+    }
+
+    secs = diffSecs % 60;
+    mins = Math.floor(diffSecs/60)%60;
+    hours = Math.floor(diffSecs/60/60)%24;
+    if ($.data($this[0], 'omitWeeks') == true)
+    {
+      days = Math.floor(diffSecs/60/60/24);
+      weeks = Math.floor(diffSecs/60/60/24/7);
+    }
+    else 
+    {
+      days = Math.floor(diffSecs/60/60/24)%7;
+      weeks = Math.floor(diffSecs/60/60/24/7);
+    }
+
+    $this.dashChangeTo(id, 'seconds_dash', secs, duration ? duration : 800);
+    $this.dashChangeTo(id, 'minutes_dash', mins, duration ? duration : 1200);
+    $this.dashChangeTo(id, 'hours_dash', hours, duration ? duration : 1200);
+    $this.dashChangeTo(id, 'days_dash', days, duration ? duration : 1200);
+    $this.dashChangeTo(id, 'weeks_dash', weeks, duration ? duration : 1200);
+
+    $.data($this[0], 'diffSecs', diffSecs);
+    if (diffSecs > 0)
+    {
+      e = $this;
+      t = setTimeout(function() { e.doCountDown(id, diffSecs-1) } , 1000);
+      $.data(e[0], 'timer', t);
+    } 
+    else if (cb = $.data($this[0], 'callback')) 
+    {
+      $.data($this[0], 'callback')();
+    }
+
+  };
+
+  $.fn.dashChangeTo = function(id, dash, n, duration) {
+      $this = $('#' + id);
+     
+      for (var i=($this.find('.' + dash + ' .digit').length-1); i>=0; i--)
+      {
+        var d = n%10;
+        n = (n - d) / 10;
+        $this.digitChangeTo('#' + $this.attr('id') + ' .' + dash + ' .digit:eq('+i+')', d, duration);
+      }
+  };
+
+  $.fn.digitChangeTo = function (digit, n, duration) {
+    if (!duration)
+    {
+      duration = 800;
+    }
+    if ($(digit + ' div.top').html() != n + '')
+    {
+
+      $(digit + ' div.top').css({'display': 'none'});
+      $(digit + ' div.top').html((n ? n : '0')).slideDown(duration);
+
+      $(digit + ' div.bottom').animate({'height': ''}, duration, "easeOutBack",function() {
+        $(digit + ' div.bottom').html($(digit + ' div.top').html());
+        $(digit + ' div.bottom').css({'display': 'block', 'height': ''});
+        $(digit + ' div.top').hide().slideUp(10);
+
+      
+      });
+    }
+  };
+
+})(jQuery);
 
 
 

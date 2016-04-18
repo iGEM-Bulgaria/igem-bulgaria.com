@@ -534,8 +534,8 @@ a:focus{
 	margin-top:50px;
 }
 .time-box{
-	width:150px;
-	height:150px;
+	width:120px;
+	height:100px;
 	display:table;
 	border:1px solid #fff;
 	margin:50px auto;
@@ -553,8 +553,8 @@ a:focus{
 	        transform:rotate(45deg);
 }
 .time-box-inner{
-	width:150px;
-	height:150px;
+	width:113px;
+	height:123px;
 	display:table;
 	text-align:center;
 
@@ -565,7 +565,7 @@ a:focus{
 	        transform:rotate(-45deg);
 }
 .time-number{
-	font-size:65px;
+	font-size:35px;
 	width:100%;
 	display:inline-block;
 	font-weight:400;
@@ -598,7 +598,7 @@ a:focus{
 	font-size:18px;
 	line-height:40px;
 	display:inline-block;
-	background-color:#3498db;
+	background-color:#3e3e3e;
 	text-transform:uppercase;
 	padding:0px 25px;
 }
@@ -1319,3 +1319,13 @@ background: #00aaff;
 .flipster {
     overflow-y: hidden !important;
 }
+
+.donation-reason {
+	background-color: #3e3e3e;
+}
+
+
+/*    margin-top: 27px;
+    color: #fff;
+    margin-left: 10px;
+    float: left;*/
