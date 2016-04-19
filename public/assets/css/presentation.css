@@ -1,13 +1,18 @@
-p {
+body {
+  color: black;
+}
+
+p, ul {
   font-size: 19px;
 }
-#page-top .pattern {
-  padding-top:0px;
+
+p {
+  margin-bottom: 20px;
 }
 
 h1 {
-  font-size: 25px;
-  margin-bottom: 20px;
+  font-size: 21px;
+  margin-bottom: 15px;
   font-weight: 700;
 }
 

@@ -74,64 +74,59 @@
       </div>
     </div><!-- /#preloader -->
     <!-- Preloader End-->
+    <div class="container-fluid">
+      <div class="col-md-6">
+        <h1 class="text-center">Какво е iGEM?</h1>
+        <p class="text-justify">
+          Международното състезание по генно инженерство iGEM (international genetically engineered machines) се провежда всяка година в Бостън. То позволява на млади студенти (до 23 години) да представят своите проекти и да участват в състезанието с тях. IGEM е комбинация от лабораторни умения, научна разработка, финансово планиране и мениджмънт, изготвяне на цялостен обществено значим научен проект и неговото изпълнение.
+        </p>
 
-    <section id="page-top" class="section-style" data-background-image="assets/images/background/top.jpg">
-      <div class="pattern height-resize">
-        <div class="container-fluid">
-          <div class="col-md-6">
-            <h1 class="text-center">Какво е iGEM?</h1>
-            <p class="text-justify">
-              Международното състезание по генно инженерство iGEM (international genetically engineered machines) се провежда всяка година в Бостън. То позволява на млади студенти (до 23 години) да представят своите проекти и да участват в състезанието с тях. IGEM е комбинация от лабораторни умения, научна разработка, финансово планиране и мениджмънт, изготвяне на цялостен обществено значим научен проект и неговото изпълнение.
-            </p>
-
-            <h1 class="text-center">Защо искаме да участваме?</h1>
-            <p>
-            С участието си в състезанието на iGEM ние целим няколко основни неща:<br/>
-              <ul>
-                <li>Да утвърдим позицията на България на световната сцена;</li>
-                <li>Да поставим основите на синтетичната биология у нас;</li>
-                <li>Да покажем, че в България има будни млади хора, които се интересуват от наука и които вярват, че тук може да се постигнат успехи на световно ниво</li>
-                <li>Да докажем, че инвестицията в науката е възвръщаема.</li>
-              </ul>
-            </p>
+        <h1 class="text-center">Защо искаме да участваме?</h1>
+        <p>
+        С участието си в състезанието на iGEM ние целим няколко основни неща:<br/>
+          <ul>
+            <li>Да утвърдим позицията на България на световната сцена;</li>
+            <li>Да поставим основите на синтетичната биология у нас;</li>
+            <li>Да покажем, че в България има будни млади хора, които се интересуват от наука и които вярват, че тук може да се постигнат успехи на световно ниво</li>
+            <li>Да докажем, че инвестицията в науката е възвръщаема.</li>
+          </ul>
+        </p>
 
 
-            <h1 class="text-left">Дарения чрез банкова транзакция:</h1>
-            <p>
-              АЙ ДЖИ И ЕМ БЪЛГАРИЯ<br/><br/>
+        <h1 class="text-left">Дарения чрез банкова транзакция:</h1>
+        <p>
+          АЙ ДЖИ И ЕМ БЪЛГАРИЯ<br/><br/>
 
-              Първа инвестиционна банка АД<br/>
-              бул. "Драган Цанков" №37<br/>
-              <strong>BIC: FINVBGSF</strong><br/>
-              <strong>IBAN - BGN: BG35FINV91501216732479</strong><br/>
-              <strong>IBAN - USD: BG12FINV91501216732505</strong><br/><br/>
+          Първа инвестиционна банка АД<br/>
+          бул. "Драган Цанков" №37<br/>
+          <strong>BIC: FINVBGSF</strong><br/>
+          <strong>IBAN - BGN: BG35FINV91501216732479</strong><br/>
+          <strong>IBAN - USD: BG12FINV91501216732505</strong><br/><br/>
 
-              <strong>N.B. Отворени сме за сключване на договори за спонсорство и дарение.</strong>
-            </p>
-          </div>
-          <div class="col-md-6">
-            <video controls>
-              <source src="http://media12.vbox7.com/s/86/860ab56896rc88c545e1.mp4" type="video/mp4">
-              <iframe width="560" height="315" src="http://vbox7.com/emb/external.php?vid=860ab56896" frameborder="0" allowfullscreen></iframe>
-            </video>
-
-            <div class="clearfix"></div>
-
-            <video controls>
-              <source src="http://cdn1.bitelevision.com/upload/2016/04/08/SINTENTICHNA_BIOLOGIA.mp4?_=1" type="video/mp4">
-            </video>
-
-            <div class="clearfix"></div>
-
-            <img id="bnr" src="http://www.predavatel.com/bg/radio/bnr_images/bnr_radio-bulgaria.png">
-            <div class="clearfix"></div>
-            <audio controls>
-              <source src="http://82.119.84.123/storage/Sofia/RadioCafe/120416_zlati.mp3" type="audio/mpeg">
-            </audio>
-          </div>
-        </div>
+          <strong>N.B. Отворени сме за сключване на договори за спонсорство и дарение.</strong>
+        </p>
       </div>
-    </section>
+      <div class="col-md-6">
+        <video controls>
+          <source src="http://media12.vbox7.com/s/86/860ab56896rc88c545e1.mp4" type="video/mp4">
+          <iframe width="560" height="315" src="http://vbox7.com/emb/external.php?vid=860ab56896" frameborder="0" allowfullscreen></iframe>
+        </video>
+
+        <div class="clearfix"></div>
+
+        <video controls>
+          <source src="http://cdn1.bitelevision.com/upload/2016/04/08/SINTENTICHNA_BIOLOGIA.mp4?_=1" type="video/mp4">
+        </video>
+
+        <div class="clearfix"></div>
+
+        <img id="bnr" src="http://www.predavatel.com/bg/radio/bnr_images/bnr_radio-bulgaria.png">
+        <div class="clearfix"></div>
+        <audio controls>
+          <source src="http://82.119.84.123/storage/Sofia/RadioCafe/120416_zlati.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
 
 
     <!-- jQuery Library -->
