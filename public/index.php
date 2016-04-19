@@ -604,7 +604,7 @@
     </script>
 
     <script>
-      var currentAmmount = 327;
+      var currentAmmount = 392;
       var goal = 5000;
       $('#donation-progress').circleProgress({
           value: (currentAmmount / goal),
