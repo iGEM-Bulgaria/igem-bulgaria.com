@@ -336,12 +336,6 @@ a:focus{
 .pattern.height-resize{
 	padding-top: 40px;
 }
-.height-resize .time-count-container{
-	margin-top: 20px !important;
-}
-.height-resize .team-container .col-sm-4{
-	padding-top:20px !important;
-}
 /* 2.4 - Height Resize End 
 ------------------------------------------ */
 
@@ -530,15 +524,15 @@ a:focus{
 }
 
 .time-count-container{
-	min-height:300px;
-	margin-top:50px;
+	min-height:200px;
+	margin-top:25px;
 }
 .time-box{
 	width:120px;
 	height:120px;
 	display:table;
 	border:1px solid #fff;
-	margin:50px auto;
+	margin:35px auto;
 
 	-webkit-border-radius:15px;
 	   -moz-border-radius:15px;

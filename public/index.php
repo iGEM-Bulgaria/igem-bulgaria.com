@@ -300,8 +300,10 @@
             </div>
           </div>
 
+          <div class="clearfix"></div>
+
           <div id="time_countdown" class="time-count-container">
-            <div class="col-sm-3">
+            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
               <div class="time-box">
                 <div class="time-box-inner dash days_dash animated" data-animation="rollIn" data-animation-delay="300">
                   <span class="time-number">
@@ -314,7 +316,7 @@
               </div>
             </div>
 
-            <div class="col-sm-3">
+            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
               <div class="time-box">
                 <div class="time-box-inner dash hours_dash animated" data-animation="rollIn" data-animation-delay="600">
                   <span class="time-number">
@@ -326,7 +328,7 @@
               </div>
             </div>
 
-            <div class="col-sm-3">
+            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
               <div class="time-box">
                 <div class="time-box-inner dash minutes_dash animated" data-animation="rollIn" data-animation-delay="900">
                   <span class="time-number">
@@ -338,7 +340,7 @@
               </div>
             </div>
 
-            <div class="col-sm-3">
+            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
               <div class="time-box">
                 <div class="time-box-inner dash seconds_dash animated" data-animation="rollIn" data-animation-delay="1200">
                   <span class="time-number">
