@@ -301,61 +301,59 @@
           </div>
 
           <div id="time_countdown" class="time-count-container">
-          <div class="col-sm-3">
-            <div class="time-box">
-              <div class="time-box-inner dash days_dash animated" data-animation="rollIn" data-animation-delay="300">
-                <span class="time-number">
-                  <!-- <span class="digit">0</span> -->
-                  <span class="digit">0</span>
-                  <span class="digit">0</span>
-                </span>
-                <span class="time-name">Days</span>
+            <div class="col-sm-3">
+              <div class="time-box">
+                <div class="time-box-inner dash days_dash animated" data-animation="rollIn" data-animation-delay="300">
+                  <span class="time-number">
+                    <!-- <span class="digit">0</span> -->
+                    <span class="digit">0</span>
+                    <span class="digit">0</span>
+                  </span>
+                  <span class="time-name"><?=L::donations_counter_days?></span>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-sm-3">
-            <div class="time-box">
-              <div class="time-box-inner dash hours_dash animated" data-animation="rollIn" data-animation-delay="600">
-                <span class="time-number">
-                  <span class="digit">0</span>
-                  <span class="digit">0</span>  
-                </span>
-                <span class="time-name">Hours</span>
+            <div class="col-sm-3">
+              <div class="time-box">
+                <div class="time-box-inner dash hours_dash animated" data-animation="rollIn" data-animation-delay="600">
+                  <span class="time-number">
+                    <span class="digit">0</span>
+                    <span class="digit">0</span>  
+                  </span>
+                  <span class="time-name"><?=L::donations_counter_hours?></span>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-sm-3">
-            <div class="time-box">
-              <div class="time-box-inner dash minutes_dash animated" data-animation="rollIn" data-animation-delay="900">
-                <span class="time-number">
-                  <span class="digit">0</span>
-                  <span class="digit">0</span>
-                </span>
-                <span class="time-name">Minutes</span>
+            <div class="col-sm-3">
+              <div class="time-box">
+                <div class="time-box-inner dash minutes_dash animated" data-animation="rollIn" data-animation-delay="900">
+                  <span class="time-number">
+                    <span class="digit">0</span>
+                    <span class="digit">0</span>
+                  </span>
+                  <span class="time-name"><?=L::donations_counter_minutes?></span>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-sm-3">
-            <div class="time-box">
-              <div class="time-box-inner dash seconds_dash animated" data-animation="rollIn" data-animation-delay="1200">
-                <span class="time-number">
-                  <span class="digit">0</span>
-                  <span class="digit">0</span>
-                </span>
-                <span class="time-name">Seconds</span>
+            <div class="col-sm-3">
+              <div class="time-box">
+                <div class="time-box-inner dash seconds_dash animated" data-animation="rollIn" data-animation-delay="1200">
+                  <span class="time-number">
+                    <span class="digit">0</span>
+                    <span class="digit">0</span>
+                  </span>
+                  <span class="time-name"><?=L::donations_counter_seconds?></span>
+                </div>
               </div>
             </div>
-          </div>
-          
-        </div><!-- /.time-count-container -->
+          </div><!-- /.time-count-container -->
 
-        <p class="time-until">
-          <span>Registration due date</span>
-        </p><!-- /.time-until -->
-
+          <p class="time-until">
+            <span><?=L::donations_counter_title?></span>
+          </p><!-- /.time-until -->
 
           <div class="clearfix"></div>
           <div class="col-md-8">
