@@ -1,7 +1,7 @@
 RewriteEngine On
+Options -Indexes
+
+RewriteRule ^([a-z]{2}+)/?$ index.php?lang=$1 [L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
-
-RewriteRule ^([a-zA-Z0-9-=_?]+)/?$ index.php?lang=$1 [L]
-Options -Indexes
