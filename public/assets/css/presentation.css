@@ -1,0 +1,25 @@
+p {
+  font-size: 19px;
+}
+#page-top .pattern {
+  padding-top:0px;
+}
+
+h1 {
+  font-size: 25px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+video, audio {
+  width: 70%    !important;
+  height: auto   !important;
+  display: block;
+  margin: 20px auto;
+}
+
+#bnr {
+  margin: 20px auto;
+  display: block;
+  width: 30%;
+}
