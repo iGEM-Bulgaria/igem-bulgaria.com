@@ -535,7 +535,7 @@ a:focus{
 }
 .time-box{
 	width:120px;
-	height:100px;
+	height:120px;
 	display:table;
 	border:1px solid #fff;
 	margin:50px auto;
@@ -553,8 +553,8 @@ a:focus{
 	        transform:rotate(45deg);
 }
 .time-box-inner{
-	width:113px;
-	height:123px;
+	width:120px;
+	height:120px;
 	display:table;
 	text-align:center;
 
@@ -579,7 +579,7 @@ a:focus{
 	        transition:all .25s;
 }
 .time-number .digit{
-	line-height: 60px;
+	line-height: 45px;
 	display: inline-block;	
 	overflow: hidden;
 }
@@ -601,6 +601,7 @@ a:focus{
 	background-color:#3e3e3e;
 	text-transform:uppercase;
 	padding:0px 25px;
+	margin: 25px 0px;
 }
 /* 4 - Page Top Section End 
 ---------------------------------------------------------------------- */
