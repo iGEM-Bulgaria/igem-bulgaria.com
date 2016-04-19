@@ -293,11 +293,69 @@
               <li><i class="fa fa-fw fa-times"></i>4. <?=L::donations_list4?></li>
             </ul>
           </div>
+
           <div class="col-md-4">
             <div id="donation-progress">
               <strong></strong>
             </div>
           </div>
+
+          <div id="time_countdown" class="time-count-container">
+          <div class="col-sm-3">
+            <div class="time-box">
+              <div class="time-box-inner dash days_dash animated" data-animation="rollIn" data-animation-delay="300">
+                <span class="time-number">
+                  <!-- <span class="digit">0</span> -->
+                  <span class="digit">0</span>
+                  <span class="digit">0</span>
+                </span>
+                <span class="time-name">Days</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="time-box">
+              <div class="time-box-inner dash hours_dash animated" data-animation="rollIn" data-animation-delay="600">
+                <span class="time-number">
+                  <span class="digit">0</span>
+                  <span class="digit">0</span>  
+                </span>
+                <span class="time-name">Hours</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="time-box">
+              <div class="time-box-inner dash minutes_dash animated" data-animation="rollIn" data-animation-delay="900">
+                <span class="time-number">
+                  <span class="digit">0</span>
+                  <span class="digit">0</span>
+                </span>
+                <span class="time-name">Minutes</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="time-box">
+              <div class="time-box-inner dash seconds_dash animated" data-animation="rollIn" data-animation-delay="1200">
+                <span class="time-number">
+                  <span class="digit">0</span>
+                  <span class="digit">0</span>
+                </span>
+                <span class="time-name">Seconds</span>
+              </div>
+            </div>
+          </div>
+          
+        </div><!-- /.time-count-container -->
+
+        <p class="time-until">
+          <span>Registration due date</span>
+        </p><!-- /.time-until -->
+
 
           <div class="clearfix"></div>
           <div class="col-md-8">
@@ -309,11 +367,12 @@
               <p>
                 <?=L::donations_bank_details?>
               </p>
-              <p class="bg-primary text-danger text-center">
+              <p class="donation-reason bg-primary text-danger text-center">
                 <?=L::donations_bank_reason?>
               </p>
             </strong>
           </div>
+
           <div class="col-md-4">
             <p class="donation-title text-center">
               <strong>
@@ -328,6 +387,7 @@
               <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
             </form>
           </div>
+
           <div class="clearfix"></div>
 
           <div class="next-section">
@@ -544,7 +604,7 @@
     </script>
 
     <script>
-      var currentAmmount = 177;
+      var currentAmmount = 327;
       var goal = 5000;
       $('#donation-progress').circleProgress({
           value: (currentAmmount / goal),
