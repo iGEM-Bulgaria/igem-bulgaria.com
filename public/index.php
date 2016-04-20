@@ -593,18 +593,18 @@
     <script type="text/javascript" src="assets/js/circle-progress.js"></script>
     <!-- Slider Javascript Functions -->
     <script src="assets/js/jquery.flipster.min.js"></script>
-    
-    <script>
-        var carousel = $("#carousel").flipster({
-            style: 'carousel',
-            spacing: -0.5,
-            nav: true,
-            buttons:   true,
-        });
-    </script>
 
     <script>
-      var currentAmmount = 392;
+      // Team photo slider
+      var carousel = $("#carousel").flipster({
+          style: 'carousel',
+          spacing: -0.5,
+          nav: true,
+          buttons:   true,
+      });
+
+      // Donations counter
+      var currentAmmount = 622;
       var goal = 5000;
       $('#donation-progress').circleProgress({
           value: (currentAmmount / goal),
@@ -613,7 +613,7 @@
             gradient: ["red", "lightgreen"]
           }
       }).on('circle-animation-progress', function(event, progress, stepValue) {
-          $(this).find('strong').text(String((stepValue * goal).toFixed(0)) + "$");
+          $(this).find('strong').text("$" + String((stepValue * goal).toFixed(0)));
       });
     </script>
   </body>
