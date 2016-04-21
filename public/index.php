@@ -123,6 +123,29 @@
           <i class="fa fa-bars"></i>
         </button> <!-- /.navbar-toggle -->
 
+      <ul id="headerlanguage" class="nav navbar-nav text-left">
+        <li>
+          <?php if ($currentLang == "bg"): ?>
+            <a href="/en">
+              <strong class="language-long">
+                <i class="fa fa-fw fa-globe"></i>English
+              </strong>
+              <strong class="language-short">
+                <i class="fa fa-fw fa-globe"></i>EN
+              </strong>
+            </a>
+          <?php else:?>
+            <a href="/">
+              <strong class="language-long">
+                <i class="fa fa-fw fa-globe"></i>Български
+              </strong>
+              <strong class="language-short">
+                <i class="fa fa-fw fa-globe"></i>БГ
+              </strong>
+            </a>
+          <?php endif;?>
+        </li>
+      </ul>
       </div> <!-- /.navbar-header -->
 
       <nav class="collapse navbar-collapse">
@@ -138,15 +161,6 @@
             <div class="fb-like" data-href="https://facebook.com/iGEMBg" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
           </li>
         </ul> <!-- /.nav .navbar-nav -->
-        <ul id="headerlanguage" class="nav navbar-nav">
-          <li>
-            <?php if ($currentLang == "bg"): ?>
-              <a href="/en"><i class="fa fa-fw fa-globe"></i><strong>English</strong></a>
-            <?php else:?>
-              <a href="/"><i class="fa fa-fw fa-globe"></i><strong>Български</strong></a>
-            <?php endif;?>
-          </li>
-        </ul>
       </nav> <!-- /.navbar-collapse  -->
     </div><!-- /#main-menu -->
     <!-- Main Menu End -->

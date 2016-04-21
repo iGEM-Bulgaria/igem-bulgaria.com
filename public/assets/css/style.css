@@ -410,64 +410,86 @@ a:focus{
 	border-color: transparent;
 }
 
+#headernavigation .fa,
+#headerlanguage .fa {
+	margin-right: 5px;
+}
+#headerlanguage {
+	margin-top: 10px;
+}
+#headerlanguage .language-short {
+	display: none;
+}
 
 @media (max-width: 992px) {
-		#logo {
-			position: absolute;
-			right: 10px;
-			top: 150px;
-			max-width: 150px;
-		}
-    .navbar-header {
-        float: none;
-    }
-    .navbar-left,.navbar-right {
-        float: none !important;
-    }
-    .navbar-toggle {
-        display: block;
-    }
-    .navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: none;
-    }
-    .navbar-fixed-top {
+
+  .navbar-header {
+    float: none;
+  }
+  .navbar-left,.navbar-right {
+    float: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: none;
+  }
+  .navbar-fixed-top {
 		top: 0;
 		border-width: 0 0 1px;
 	}
-    .navbar-collapse.collapse {
-        display: none!important;
-    }
-    .navbar-nav {
-        float: none!important;
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+  .navbar-nav {
+    float: none!important;
 		margin-top: 7.5px;
 	}
 	.navbar-nav>li {
-        float: none;
-    }
-    .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .collapse.in{
-  		display:block !important;
+    float: none;
+  }
+  .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .collapse.in{
+		display:block !important;
 	}
 }
 
 @media screen and (max-width: 992px){
-	#headernavigation,
-	#headerlanguage {
+	.navbar-toggle {
+		padding: 6px 10px;
+		margin-top: 12px;
+	}
+	#logo {
+		position: absolute;
+		right: 20px;
+		bottom: 60px;
+		max-width: 150px;
+	}
+	#headernavigation	{
 		background:rgba(0,0,0,.8);
 	}
 	#headerlanguage {
 		text-align: center;
+		float: left !important;
+		margin-left: -5px;
+	}
+	#headerlanguage .language-long {
+		display: none;
+	}
+	#headerlanguage .language-short {
+		display: inline-block;
+	}
+	#headerlanguage .fa {
+		margin-right: 0px;
 	}
 	.navbar-default .navbar-toggle:hover, 
 	.navbar-default .navbar-toggle:focus{
 		background-color:transparent;
-	}
-	.navbar-default .navbar-toggle{
-		margin-top: 15px;
 	}
 }
 @media screen and (min-width: 992px){
@@ -483,10 +505,8 @@ a:focus{
 	}
 }
 
-#headernavigation .fa,
-#headerlanguage .fa {
-	margin-right: 5px;
-}
+
+
 /* 3 - Main Menu End 
 ---------------------------------------------------------------------- */
 
@@ -1303,9 +1323,6 @@ background: #00aaff;
  color: green;
 }
 
-#headerlanguage {
-	margin-top:20px;
-}
 
 /* Slider */
 .flipster__nav {
