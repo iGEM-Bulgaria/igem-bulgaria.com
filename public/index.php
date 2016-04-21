@@ -627,7 +627,7 @@
       });
 
       // Donations counter
-      var currentAmmount = 622;
+      var currentAmmount = 679;
       var goal = 5000;
       $('#donation-progress').circleProgress({
           value: (currentAmmount / goal),
