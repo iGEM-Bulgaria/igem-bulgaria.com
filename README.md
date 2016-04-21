@@ -25,12 +25,13 @@
     </VirtualHost>
     ```
 
-(Note that the document root is in the `/public` subfolder rather than the repo's root)
-- Clone `deploy-config.example.php` into `deploy-config.php` and edit accordingly to the server you want to deploy on
+    (Note that the document root is in the `/public` subfolder rather than the repo's root)
+- (Optional) Clone `deploy-config.example.php` into `deploy-config.php` and edit accordingly, depending on the server you want to deploy on. Upload `deploy-config.php` manually to the server.
 
 # Credits
 
 - [**Kite HTML5 theme** by Jewel Theme](https://jeweltheme.com/product/kite/)
 - [**jquery-circle-progress** by kottenator](https://github.com/kottenator/jquery-circle-progress)
+- [**jquery-flipster** by drien](https://github.com/drien/jquery-flipster)
 - [**php-i18n** by Philipp15b](https://github.com/Philipp15b/php-i18n)
 - [**simple-php-git-deploy** by markomarkovic](https://github.com/markomarkovic/simple-php-git-deploy)
