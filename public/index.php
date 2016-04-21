@@ -303,25 +303,27 @@
             <?=L::donations_section_title?>
           </h2><!-- /.Section-title  -->
 
-          <div class="col-md-8">
+          <div class="col-md-9">
             <ul id="donation-list">
               <li><i class="fa fa-fw fa-check"></i>1. <?=L::donations_list1?></li>
-              <li><i class="fa fa-fw fa-times"></i>2. <?=L::donations_list2?></li>
+              <li><i class="fa fa-fw fa-question"></i>2. <?=L::donations_list2?></li>
               <li><i class="fa fa-fw fa-times"></i>3. <?=L::donations_list3?></li>
               <li><i class="fa fa-fw fa-times"></i>4. <?=L::donations_list4?></li>
             </ul>
           </div>
 
-          <div class="col-md-4">
-            <div id="donation-progress">
-              <strong></strong>
+          <div class="col-md-3">
+            <div id="donation-progress-wrapper" class="dark">
+              <div id="donation-progress">
+                <strong></strong>
+              </div>
             </div>
           </div>
 
           <div class="clearfix"></div>
 
           <p class="time-until">
-            <span><?=L::donations_counter_title?></span>
+            <span class="dark"><?=L::donations_counter_title?></span>
           </p><!-- /.time-until -->
 
           <div class="clearfix"></div>
@@ -381,21 +383,21 @@
 
           <div class="col-md-8">
             <strong>
-              <p class="donation-title text-center">
+              <p class="donation-title text-center dark">
                 <?=L::donations_bank_title?>
               </p>
 
               <p>
                 <?=L::donations_bank_details?>
               </p>
-              <p class="donation-reason bg-primary text-danger text-center">
+              <p class="donation-reason bg-primary text-danger text-center dark">
                 <?=L::donations_bank_reason?>
               </p>
             </strong>
           </div>
 
           <div class="col-md-4">
-            <p class="donation-title text-center">
+            <p class="donation-title text-center dark">
               <strong>
                <?=L::donations_paypal_title?>
               </strong>
@@ -404,7 +406,7 @@
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="text-center" id="paypal-form">
               <input type="hidden" name="cmd" value="_s-xclick">
               <input type="hidden" name="hosted_button_id" value="748H3LUV52FLE">
-              <input type="image" src="assets/images/paypal_button.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" width="250">
+              <input type="image" src="assets/images/paypal_button.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" width="220">
               <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
             </form>
           </div>

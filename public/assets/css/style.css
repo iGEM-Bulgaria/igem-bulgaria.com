@@ -605,10 +605,9 @@ a:focus{
 	font-size:18px;
 	line-height:40px;
 	display:inline-block;
-	background-color:#3e3e3e;
 	text-transform:uppercase;
-	padding:0px 25px;
-	margin: 25px 0px;
+	padding:0px 20px;
+	margin: 20px 0px;
 }
 /* 4 - Page Top Section End 
 ---------------------------------------------------------------------- */
@@ -1286,10 +1285,38 @@ background: #00aaff;
 	padding: 20px 0px;
 }
 
-#donation-progress {
+#donation-progress-wrapper {
 	width: 120px;
+	height: 120px;
+	padding: 10px;
 	position: relative;
 	margin: 0 auto;
+
+  display: table;
+  border: 1px solid #fff;
+  margin: 55px auto;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#donation-progress {
+	width: 120px;
+	height: 120px;
+	position: relative;
+	margin: 0 auto;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 #donation-progress strong {
@@ -1305,15 +1332,18 @@ background: #00aaff;
 #donation-list {
 	list-style: none;
 	padding-left:0px;
-	font-size: 20px;
+	font-size: 25px;
+	margin-top: 65px;
 }
 
 #donation-list .fa-times {
- color: red;
+ color: #EE3B38;
 }
-
+#donation-list .fa-question {
+ color: #EFD62A;
+}
 #donation-list .fa-check {
- color: green;
+ color: #2DB36E;
 }
 
 
@@ -1325,7 +1355,7 @@ background: #00aaff;
     overflow-y: hidden !important;
 }
 
-.donation-reason {
+.dark {
 	background-color: #3e3e3e;
 }
 
