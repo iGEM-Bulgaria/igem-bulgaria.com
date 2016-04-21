@@ -274,10 +274,10 @@
             <?=L::about_section_title?>
           </h2><!-- /.Section-title  -->
 
-          <p class="lead">
+          <p class="text-justify">
             <?=L::about_textp1?>
           </p>
-          <p>
+          <p class="text-justify">
             <?=L::about_textp2?>
           </p>
 
@@ -317,6 +317,12 @@
               <strong></strong>
             </div>
           </div>
+
+          <div class="clearfix"></div>
+
+          <p class="time-until">
+            <span><?=L::donations_counter_title?></span>
+          </p><!-- /.time-until -->
 
           <div class="clearfix"></div>
 
@@ -371,11 +377,8 @@
             </div>
           </div><!-- /.time-count-container -->
 
-          <p class="time-until">
-            <span><?=L::donations_counter_title?></span>
-          </p><!-- /.time-until -->
-
           <div class="clearfix"></div>
+
           <div class="col-md-8">
             <strong>
               <p class="donation-title text-center">

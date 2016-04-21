@@ -42,7 +42,7 @@
       "hours": "Hours",
       "minutes": "Minutes",
       "seconds": "Seconds",
-      "title": "Time left until the registration deadline"
+      "title": "Time left until the <a href='http://2016.igem.org/Requirements/Team_Registration_Fee' target='_blank'>registration deadline</a>"
     },
     "bank_title": "Donate via bank transaction:",
     "bank_details": "IGEM BULGARIA<br><br>First Investment Bank AD<br>bul. \"Dragan Tsankov\" №37<br>BIC: FINVBGSF<br>IBAN - BGN: BG35FINV91501216732479<br>IBAN - USD: BG12FINV91501216732505",
