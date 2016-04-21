@@ -178,6 +178,10 @@
           <h1 class="site-title">
             <span><?=L::home_section_title?></span>
           </h1><!-- /.site-title -->
+
+          <p class="section-description">
+            <span><?=L::home_section_description?></span>
+          </p>
           <!-- <img class="logo" src="assets/images/logo.png"> -->
           <div class="social-btn-container">
             <span class="social-btn-box">

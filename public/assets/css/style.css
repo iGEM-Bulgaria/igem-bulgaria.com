@@ -520,19 +520,8 @@ a:focus{
 	font-size:85px;
 	font-family:'LastlivingsoulsShadow';
 	margin:0 0 50px 0;
-	padding-bottom:50px;
 	position:relative;
 }
-/*.site-title:before,
-.site-title:after{
-	content:"";
-	width:100px;
-	height:10px;
-	left:50%;
-	margin-left:-50px;
-	border-bottom:1px double #fff;
-	position:absolute;
-}*/
 .site-title:before{
 	bottom:0;
 }
@@ -541,6 +530,11 @@ a:focus{
 }
 #page-top .pattern {
 	padding-top: 100px;
+}
+#page-top .section-description {
+	font-size: 24px;
+	line-height: 48px;
+	font-weight: 700;
 }
 
 .time-count-container{
