@@ -53,25 +53,25 @@ jQuery(document).ready(function($) {
 
   $('#time_countdown').countDown({
         
-        // targetDate: {
-        //     'day': 11,
-        //     'month': 9,
-        //     'year': 2016,
-        //     'hour': 15,
-        //     'min': 0,
-        //     'sec': 0
-        // },
-        // omitWeeks: true
+        targetDate: {
+            'day': 28,
+            'month': 4,
+            'year': 2016,
+            'hour': 12,
+            'min': 12,
+            'sec': 12
+        },
+        omitWeeks: true
 
-         targetOffset: {
-            'day':      11,
-            'month':    0,
-            'year':     0,
-            'hour':     15,
-            'min':      20,
-            'sec':      3
-    },
-    omitWeeks: true
+    //      targetOffset: {
+    //         'day':      11,
+    //         'month':    0,
+    //         'year':     0,
+    //         'hour':     15,
+    //         'min':      20,
+    //         'sec':      3
+    // },
+    // omitWeeks: true
 
       });
 
