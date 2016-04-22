@@ -381,6 +381,17 @@
 
           <div class="clearfix"></div>
 
+          <p class="donation-title text-center dark">
+            <strong><?=L::donations_weare_title?></strong>
+          </p>
+          <p class="text-center">
+            <strong>
+              <?=L::donations_weare_text?>
+            </strong>
+          </p>
+
+          <div class="clearfix"></div>
+
           <div class="col-md-8">
             <strong>
               <p class="donation-title text-center dark">
