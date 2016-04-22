@@ -644,7 +644,7 @@
           value: (currentAmmount / goal),
           size: 120,
           fill: {
-            gradient: ["red", "yellow", "green"]
+            gradient: ["red", "yellow"]
           }
       }).on('circle-animation-progress', function(event, progress, stepValue) {
           $(this).find('strong').text("$" + String((stepValue * goal).toFixed(0)));
