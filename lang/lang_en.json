@@ -64,14 +64,6 @@
       "boris": {
         "name": "Boris Kirov",
         "role": "Coach"
-      },
-      "jenny": {
-        "name": "Jenny Pavlova",
-        "role": "Technical leader"
-      },
-      "angel": {
-        "name": "Angel Mehandzhiyski",
-        "role": "Biological leader"
       }
     }
   },
