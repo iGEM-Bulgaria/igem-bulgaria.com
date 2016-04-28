@@ -306,7 +306,7 @@
           <div class="col-md-9">
             <ul id="donation-list">
               <li><i class="fa fa-fw fa-check"></i>1. <?=L::donations_list1?></li>
-              <li><i class="fa fa-fw fa-question"></i>2. <?=L::donations_list2?></li>
+              <li><i class="fa fa-fw fa-check"></i>2. <?=L::donations_list2?></li>
               <li><i class="fa fa-fw fa-times"></i>3. <?=L::donations_list3?></li>
               <li><i class="fa fa-fw fa-times"></i>4. <?=L::donations_list4?></li>
             </ul>
@@ -319,65 +319,6 @@
               </div>
             </div>
           </div>
-
-          <div class="clearfix"></div>
-
-          <p class="time-until">
-            <span class="dark"><?=L::donations_counter_title?></span>
-          </p><!-- /.time-until -->
-
-          <div class="clearfix"></div>
-
-          <div id="time_countdown" class="time-count-container">
-            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-              <div class="time-box">
-                <div class="time-box-inner dash days_dash animated" data-animation="rollIn" data-animation-delay="300">
-                  <span class="time-number">
-                    <!-- <span class="digit">0</span> -->
-                    <span class="digit">0</span>
-                    <span class="digit">0</span>
-                  </span>
-                  <span class="time-name"><?=L::donations_counter_days?></span>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-              <div class="time-box">
-                <div class="time-box-inner dash hours_dash animated" data-animation="rollIn" data-animation-delay="600">
-                  <span class="time-number">
-                    <span class="digit">0</span>
-                    <span class="digit">0</span>  
-                  </span>
-                  <span class="time-name"><?=L::donations_counter_hours?></span>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-              <div class="time-box">
-                <div class="time-box-inner dash minutes_dash animated" data-animation="rollIn" data-animation-delay="900">
-                  <span class="time-number">
-                    <span class="digit">0</span>
-                    <span class="digit">0</span>
-                  </span>
-                  <span class="time-name"><?=L::donations_counter_minutes?></span>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-              <div class="time-box">
-                <div class="time-box-inner dash seconds_dash animated" data-animation="rollIn" data-animation-delay="1200">
-                  <span class="time-number">
-                    <span class="digit">0</span>
-                    <span class="digit">0</span>
-                  </span>
-                  <span class="time-name"><?=L::donations_counter_seconds?></span>
-                </div>
-              </div>
-            </div>
-          </div><!-- /.time-count-container -->
 
           <div class="clearfix"></div>
 
@@ -564,8 +505,8 @@
       });
 
       // Donations counter
-      var currentAmmount = 2179;
-      var goal = 5000;
+      var currentAmmount = 5000;
+      var goal = 50000;
       $('#donation-progress').circleProgress({
           value: (currentAmmount / goal),
           size: 120,

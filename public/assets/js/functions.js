@@ -51,29 +51,7 @@ jQuery(document).ready(function($) {
 	/* Main Menu End  
 	-------------------------------------------------------------------*/
 
-  $('#time_countdown').countDown({
-        
-        targetDate: {
-            'day': 28,
-            'month': 4,
-            'year': 2016,
-            'hour': 12,
-            'min': 12,
-            'sec': 12
-        },
-        omitWeeks: true
 
-    //      targetOffset: {
-    //         'day':      11,
-    //         'month':    0,
-    //         'year':     0,
-    //         'hour':     15,
-    //         'min':      20,
-    //         'sec':      3
-    // },
-    // omitWeeks: true
-
-      });
 
 	/* Next Section   
 	-------------------------------------------------------------------*/
