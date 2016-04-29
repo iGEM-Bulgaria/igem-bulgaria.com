@@ -241,6 +241,9 @@
                   <li class = "team-photos" data-flip-title="Team1" data-flip-category="Purples">
                       <img src="assets/images/team/team3.jpg">
                    </li>
+                  <li class = "team-photos" data-flip-title="Team1" data-flip-category="Purples">
+                      <img src="assets/images/team/team2.jpg">
+                   </li>
                   <li class = "team-photos" data-flip-title="Team3" data-flip-category="Yellows">
                       <img src="assets/images/team/team.jpg">
                   </li>
@@ -307,7 +310,7 @@
             <ul id="donation-list">
               <li><i class="fa fa-fw fa-check"></i>1. <?=L::donations_list1?></li>
               <li><i class="fa fa-fw fa-check"></i>2. <?=L::donations_list2?></li>
-              <li><i class="fa fa-fw fa-times"></i>3. <?=L::donations_list3?></li>
+              <li><i class="fa fa-fw fa-question"></i>3. <?=L::donations_list3?></li>
               <li><i class="fa fa-fw fa-times"></i>4. <?=L::donations_list4?></li>
             </ul>
           </div>
