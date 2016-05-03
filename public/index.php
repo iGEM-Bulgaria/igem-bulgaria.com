@@ -306,22 +306,36 @@
             <?=L::donations_section_title?>
           </h2><!-- /.Section-title  -->
 
-          <div class="col-md-9">
-            <ul id="donation-list">
-              <li><i class="fa fa-fw fa-check"></i>1. <?=L::donations_list1?></li>
-              <li><i class="fa fa-fw fa-check"></i>2. <?=L::donations_list2?></li>
-              <li><i class="fa fa-fw fa-question"></i>3. <?=L::donations_list3?></li>
-              <li><i class="fa fa-fw fa-times"></i>4. <?=L::donations_list4?></li>
+          <div >
+            <ul id="donation-list">            
+               <div class="col-md-4 donationStep" id="done"><i class="fa fa-fw fa-check"></i>2. <?=L::donations_list1?></div>
+               <div class="col-md-4 donationStep" id ="inProgress"><i class="fa fa-fw fa-question"></i>3. <?=L::donations_list2?></div>
+               <div class="col-md-4 donationStep" id="incomming"><i class="fa fa-fw fa-times"></i>4. <?=L::donations_list3?></div>
             </ul>
           </div>
-
-          <div class="col-md-3">
+          <div class="clearfix"></div>
+          <div class="col-md-4">
             <div id="donation-progress-wrapper" class="dark">
-              <div id="donation-progress">
+              <div id="donation-registration" class="donations-circle">
                 <strong></strong>
               </div>
             </div>
           </div>
+          <div class="col-md-4">
+            <div id="donation-progress-wrapper" class="dark">
+              <div id="donation-materials" class="donations-circle">
+                <strong></strong>
+              </div>
+            </div>
+          </div>          
+          <div class="col-md-4">
+            <div id="donation-progress-wrapper" class="dark">
+              <div id="donation-travel" class="donations-circle">
+                <strong></strong>
+              </div>
+            </div>
+          </div>
+
 
           <div class="clearfix"></div>
 
@@ -496,7 +510,7 @@
     <!-- Custom JavaScript Functions -->
     <script type="text/javascript" src="assets/js/circle-progress.js"></script>
     <!-- Slider Javascript Functions -->
-    <script src="assets/js/jquery.flipster.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.flipster.min.js"></script>
 
     <script>
       // Team photo slider
@@ -507,18 +521,43 @@
           buttons:   true,
       });
 
-      // Donations counter
+      // registration counter
       var currentAmmount = 5000;
-      var goal = 50000;
-      $('#donation-progress').circleProgress({
+      var goal = 5000;
+      $('#donation-registration').circleProgress({
           value: (currentAmmount / goal),
           size: 120,
           fill: {
-            gradient: ["red", "yellow"]
+            gradient: ["#11653B", "#2DB36E"]
           }
       }).on('circle-animation-progress', function(event, progress, stepValue) {
           $(this).find('strong').text("$" + String((stepValue * goal).toFixed(0)));
       });
+      // materials counter
+      var materialAmmount = 120;
+      var materialGoal = 35000;
+      $('#donation-materials').circleProgress({
+          value: (materialAmmount/materialGoal),
+          size: 120,
+          fill: {
+            gradient: ["#DFC92D", "#DFC92D"]
+          }
+      }).on('circle-animation-progress', function(event, progress, stepValue) {
+          $(this).find('strong').text("$" + String((stepValue * materialGoal).toFixed(0)));
+      });
+      // travel costs counter
+      var travelCost = 0;
+      var travelCostGoal = 10000;
+      $('#donation-travel').circleProgress({
+          value: (travelCost / travelCostGoal),
+          size: 120,
+          fill: {
+            gradient: ["#DFC92D", "#DFC92D"]
+          }
+      }).on('circle-animation-progress', function(event, progress, stepValue) {
+          $(this).find('strong').text("$" + String((stepValue * travelCostGoal).toFixed(0)));
+      });
+      
     </script>
   </body>
 </html>

@@ -1305,7 +1305,7 @@ background: #00aaff;
   transform: rotate(45deg);
 }
 
-#donation-progress {
+.donations-circle {
 	width: 120px;
 	height: 120px;
 	position: relative;
@@ -1317,7 +1317,7 @@ background: #00aaff;
   transform: rotate(-45deg);
 }
 
-#donation-progress strong {
+.donations-circle strong {
   position: absolute;
   top: 40px;
   left: 0;
@@ -1343,7 +1343,26 @@ background: #00aaff;
 #donation-list .fa-check {
  color: #2DB36E;
 }
-
+.donationStep {
+	text-align: center;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+#done {
+	color: #2DB36E;
+}
+#done > a:hover {
+	color: #11653B;
+}
+#done > a {
+	color: #2DB36E;
+}
+#inProgress {
+	color: #EFD62A;
+}
+#incomming {
+	color: #EF3C39;
+}
 
 /* Slider */
 .flipster__nav {
@@ -1356,9 +1375,3 @@ background: #00aaff;
 .dark {
 	background-color: #3e3e3e;
 }
-
-
-/*    margin-top: 27px;
-    color: #fff;
-    margin-left: 10px;
-    float: left;*/
