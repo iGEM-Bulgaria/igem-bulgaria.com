@@ -24,7 +24,7 @@
   $success = false;
   $message = "";
 
-  echo "<pre>" . var_export($_POST, true) . "</pre>";
+  // echo "<pre>" . var_export($_POST, true) . "</pre>";
   if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     foreach (array_keys($questions) as $questionId) {
       if (!isset($_POST[$questionId]) || !$_POST[$questionId]) {
