@@ -46,10 +46,10 @@
       $success = true;
 
       $to      = "team@igem-bulgaria.com";
-      $subject = "Ново членче - " . $_POST["email"];
+      $subject = "=?UTF-8?B?".base64_encode("Ново членче - " . $_POST["email"])."?=";
       $headers = array();
       $headers[] = "MIME-Version: 1.0";
-      $headers[] = "Content-type: text/plain; charset=iso-8859-1";
+      $headers[] = "Content-Type: text/plain; charset=UTF-8";
       $headers[] = "From: Join iGEM Bulgaria <join@igem-bulgaria.com>";
       mail($to, $subject, $message, implode("\r\n", $headers));
     }
