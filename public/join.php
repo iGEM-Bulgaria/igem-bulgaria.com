@@ -4,7 +4,7 @@
 
   $questions = array(
     "who" => "Кой си ти?",
-    "birthday" => "Кога сте роден?",
+    "birthday" => "Кога си роден?",
     "email" => "Твоя email адрес?",
     "whyus" => "Защо избра нас?",
     "whyyou" => "Защо ние да изберем теб?",
@@ -24,7 +24,7 @@
   $success = false;
   $message = "";
 
-  // echo "<pre>" . var_export($_POST, true) . "</pre>";
+  echo "<pre>" . var_export($_POST, true) . "</pre>";
   if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     foreach (array_keys($questions) as $questionId) {
       if (!isset($_POST[$questionId]) || !$_POST[$questionId]) {
@@ -70,6 +70,9 @@
 
     <!-- Bootstrap  -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap DateTimePicker  -->
+    <link href="assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
 
     <!-- icon fonts font Awesome -->
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
@@ -135,39 +138,41 @@
         <div class="container">
           <?php if(!$success): ?>
             <h1 class="text-center">Ти си биолог?</h1>
-            <h2 class="text-center">Искаш да станеш част от iGEM Bulgaria?</h1>
+            <h3 class="text-center">Искаш да станеш част от iGEM България?</h1>
             <br>
-            <p class="text-justify">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            <p class="text-center">
+              <a href="/">iGEM България</a> е първият български отбор, който ще участва в международното състезание по синтетична биология <a href="http://igem.org" target="_blank">iGEM</a>.
             </p>
-
             <form role="form" id="join-form" method="POST" action="/join">
               <div class="form-group <?=in_array("who", $invalid) ? "has-error" : "" ?>">
                 <label for="who" class="control-label"><?=$questions["who"]?></label>
                 <textarea class="form-control" rows="5" id="who" name="who" form="join-form"><?=$_POST["who"]?></textarea>
               </div>
               <div class="form-group <?=in_array("birthday", $invalid) ? "has-error" : "" ?>">
-                <label for="birthday"><?=$questions["birthday"]?></label>
-                <input type="date" class="form-control" id="birthday" name="birthday" value="<?=$_POST['birthday']?>">
+                <label for="birthday" class="control-label"><?=$questions["birthday"]?></label>
+                <div class="row">
+                  <div id ="birthday-picker">
+                  <input type="hidden" id='birthday' name="birthday" value="<?=$_POST['birthday']?>" >
+                </div>
               </div>
               <div class="form-group <?=in_array("email", $invalid) ? "has-error" : "" ?>">
                 <label for="email" class="control-label"><?=$questions["email"]?></label>
                 <input type="email" class="form-control" name="email" id="email" value="<?=$_POST["email"]?>">
               </div>
               <div class="form-group <?=in_array("whyus", $invalid) ? "has-error" : "" ?>">
-                <label for="whyus"><?=$questions["whyus"]?></label>
+                <label for="whyus" class="control-label"><?=$questions["whyus"]?></label>
                 <textarea class="form-control" rows="5" id="whyus" name="whyus" form="join-form"><?=$_POST["whyus"]?></textarea>
               </div>
               <div class="form-group <?=in_array("whyyou", $invalid) ? "has-error" : "" ?>">
-                <label for="whyyou"><?=$questions["whyyou"]?></label>
+                <label for="whyyou" class="control-label"><?=$questions["whyyou"]?></label>
                 <textarea class="form-control" rows="5" id="whyyou" name="whyyou" form="join-form"><?=$_POST["whyyou"]?></textarea>
               </div>
               <div class="form-group <?=in_array("idea", $invalid) ? "has-error" : "" ?>">
-                <label for="idea"><?=$questions["idea"]?></label>
+                <label for="idea"class="control-label"><?=$questions["idea"]?></label>
                 <textarea class="form-control" rows="5" id="idea" name="idea" form="join-form"><?=$_POST["idea"]?></textarea>
               </div>
               <div class="form-group">
-                <label for="sortable"><?=$questions["sortable"]?></label>
+                <label for="sortable" class="control-label"><?=$questions["sortable"]?></label>
                 <input type="hidden" id="sortable-array" name="sortable" value="">
                 <ul id="sortable">
                     <?php foreach($sortables as $idx => $priority): ?>
@@ -178,7 +183,7 @@
               <input type="submit" class="btn btn-default" value="Изпрати">
             </form>
           <?php else: ?>
-            <h2 class="text-center">Благодарим ти! Ще се свържем с теб!</h2>
+            <h2 class="text-center">Благодарим ти! Скоро ще се свържем с теб!</h2>
             <br>
             <a href="/">
               <img src="/assets/images/logo_small.png" class="img img-responsive" id="logo">
@@ -199,9 +204,31 @@
     <script type="text/javascript" src="assets/js/functions.js"></script>
     <!-- Custom JavaScript Functions -->
     <script type="text/javascript" src="assets/js/sortable.min.js"></script>
+    <!--  Bootstrap DateTimePicker -->
+    <script type="text/javascript" src="assets/js/moment-with-locales.min.js"></script>
+    <!--  Bootstrap DateTimePicker -->
+    <script type="text/javascript" src="assets/js/bootstrap-datetimepicker.min.js"></script>
 
     <script type="text/javascript">
       $(document).ready(function() {
+        $("#birthday-picker").datetimepicker({
+          inline: true,
+          sideBySide: true,
+          format: 'DD-MM-YYYY',
+          viewMode: 'years',
+          dayViewHeaderFormat: "DD MMMM YYYY",
+          minDate: "1980",
+          maxDate: "1997",
+          useCurrent: false,
+          viewDate: "1993",
+          locale: "bg"
+        });
+        var datepicker = $("#birthday-picker").data("DateTimePicker");
+        <?php if($_POST["birthday"]): ?>
+          datepicker.date(<?='"'.$_POST["birthday"].'"'?>);
+          datepicker.viewMode("days");
+        <?php endif;?>
+
         var sortable = Sortable.create(document.getElementById('sortable'));
         <?php if($_POST["sortable"]): ?>
           sortable.sort(<?="[".$_POST["sortable"]."]"?>);
@@ -209,6 +236,9 @@
 
         $("#join-form").submit(function(e) {
           $('#sortable-array').val(sortable.toArray());
+          var birthdayDate = datepicker.date();
+          if (birthdayDate) birthdayDate = birthdayDate.format("DD-MM-YYYY");
+          $('#birthday').val(birthdayDate || "");
         });
       });
     </script>
