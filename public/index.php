@@ -40,7 +40,7 @@
     <meta property="og:type"          content="website" />
     <meta property="og:title"         content="<?=L::head_title?>" />
     <meta property="og:description"   content="<?=L::head_description?>" />
-    <meta property="og:image"         content="http://igem-bulgaria.comassets/images/logo_small.png" />
+    <meta property="og:image"         content="http://igem-bulgaria.com/assets/images/logo_small.png" />
 
     <!-- Bootstrap  -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">

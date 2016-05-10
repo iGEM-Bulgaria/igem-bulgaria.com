@@ -1,0 +1,45 @@
+body {
+  font-size: 20px;
+}
+
+.pattern {
+  background:rgba(0,0,0,.8);
+  padding-bottom: 100px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+textarea.form-control,
+input.form-control {
+  font-size: 20px;
+}
+
+#sortable {
+  list-style: none;
+  padding-left: 0px;
+}
+
+#sortable li {
+  padding: 10px 20px;
+  cursor: move;
+  color: white;
+  border: 1px solid white;
+  margin-bottom: 5px;
+}
+
+#sortable .drag-handle {
+  margin-right: 20px;
+}
+
+.btn {
+  color: white;
+  display: block;
+  margin: 0 auto;
+  font-size:30px;
+}
+
+#logo {
+  margin: 0 auto;
+}
