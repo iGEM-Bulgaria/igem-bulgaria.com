@@ -136,6 +136,10 @@
     <section id="page-top" class="section-style" data-background-image="assets/images/background/top.jpg">
       <div class="pattern height-resize">
         <div class="container">
+          <a href="/">
+            <img src="/assets/images/logo_small.png" class="img img-responsive" id="logo">
+          </a>
+
           <?php if(!$success): ?>
             <h1 class="text-center">Ти си биолог?</h1>
             <h3 class="text-center">Искаш да станеш част от iGEM България?</h1>
@@ -183,11 +187,8 @@
               <input type="submit" class="btn btn-default" value="Изпрати">
             </form>
           <?php else: ?>
-            <h2 class="text-center">Благодарим ти! Скоро ще се свържем с теб!</h2>
             <br>
-            <a href="/">
-              <img src="/assets/images/logo_small.png" class="img img-responsive" id="logo">
-            </a>
+            <h2 class="text-center">Благодарим ти! Скоро ще се свържем с теб!</h2>
           <?php endif;?>
         </div>
       </div>
