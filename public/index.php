@@ -182,7 +182,7 @@
           <p class="section-description">
             <span><?=L::home_section_description?></span>
           </p>
-          <!-- <img class="logo" src="assets/images/logo.png"> -->
+
           <div class="social-btn-container">
             <span class="social-btn-box">
               <a href="https://www.facebook.com/iGEMbg/" target="_blank" class="facebook-btn"><i class="fa fa-facebook"></i></a>
@@ -209,6 +209,10 @@
             </span><!-- /.social-btn-box -->
           </div>
 
+          <div class="text-center" id="join-banner">
+            <img src="assets/images/flask.png">
+            <span><?=L::home_join?></span>
+          </div>
 
           <div class="next-section">
             <a class="go-to-team"><span></span></a>

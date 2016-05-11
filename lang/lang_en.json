@@ -17,7 +17,8 @@
   "home": {
     "section_name": "We are",
     "section_title": "iGEM Bulgaria",
-    "section_description": "The first Bulgarian team to participate in the international synthetic biology competition <a href='http://igem.org/' target='_blank'>iGEM</a>."
+    "section_description": "The first Bulgarian team to participate in the international synthetic biology competition <a href='http://igem.org/' target='_blank'>iGEM</a>.",
+    "join": "<a href='/join' target='_blank'>We are looking for young and passionate biologists to join us! <br> www.igem-bulgaria.com/join</a>"
   },
   "team": {
     "section_name": "Meet the team",
