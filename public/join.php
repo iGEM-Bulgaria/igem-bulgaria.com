@@ -6,6 +6,7 @@
     "who" => "Кой си ти?",
     "birthday" => "Кога си роден?",
     "email" => "Твоя email адрес?",
+    "phone" => "Твоя телефонен номер?",
     "whyus" => "Защо избра нас?",
     "whyyou" => "Защо ние да изберем теб?",
     "idea" => "Опиши твоята идея за супер-проект за състезанието iGEM?",
@@ -162,6 +163,10 @@
               <div class="form-group <?=in_array("email", $invalid) ? "has-error" : "" ?>">
                 <label for="email" class="control-label"><?=$questions["email"]?></label>
                 <input type="email" class="form-control" name="email" id="email" value="<?=htmlspecialchars($_POST["email"])?>">
+              </div>
+              <div class="form-group <?=in_array("phone", $invalid) ? "has-error" : "" ?>">
+                <label for="phone" class="control-label"><?=$questions["phone"]?></label>
+                <input type="tel" class="form-control"  pattern="^\+\d{12}$" placeholder="+3598********" required name="phone" id="phone" value="<?=htmlspecialchars($_POST["phone"])?>">
               </div>
               <div class="form-group <?=in_array("whyus", $invalid) ? "has-error" : "" ?>">
                 <label for="whyus" class="control-label"><?=$questions["whyus"]?></label>
