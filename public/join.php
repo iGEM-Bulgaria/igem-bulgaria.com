@@ -155,7 +155,7 @@
               <div class="form-group <?=in_array("birthday", $invalid) ? "has-error" : "" ?>">
                 <label for="birthday" class="control-label"><?=$questions["birthday"]?></label>
                 <div class="row">
-                  <div id ="birthday-picker">
+                  <div id="birthday-picker"></div>
                   <input type="hidden" id='birthday' name="birthday" value="<?=$_POST['birthday']?>" >
                 </div>
               </div>
