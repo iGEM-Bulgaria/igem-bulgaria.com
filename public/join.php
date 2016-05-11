@@ -150,30 +150,30 @@
             <form role="form" id="join-form" method="POST" action="/join">
               <div class="form-group <?=in_array("who", $invalid) ? "has-error" : "" ?>">
                 <label for="who" class="control-label"><?=$questions["who"]?></label>
-                <textarea class="form-control" rows="5" id="who" name="who" form="join-form"><?=$_POST["who"]?></textarea>
+                <textarea class="form-control" rows="5" id="who" name="who" form="join-form"><?=htmlspecialchars($_POST["who"])?></textarea>
               </div>
               <div class="form-group <?=in_array("birthday", $invalid) ? "has-error" : "" ?>">
                 <label for="birthday" class="control-label"><?=$questions["birthday"]?></label>
                 <div class="row">
                   <div id="birthday-picker"></div>
-                  <input type="hidden" id='birthday' name="birthday" value="<?=$_POST['birthday']?>" >
+                  <input type="hidden" id='birthday' name="birthday">
                 </div>
               </div>
               <div class="form-group <?=in_array("email", $invalid) ? "has-error" : "" ?>">
                 <label for="email" class="control-label"><?=$questions["email"]?></label>
-                <input type="email" class="form-control" name="email" id="email" value="<?=$_POST["email"]?>">
+                <input type="email" class="form-control" name="email" id="email" value="<?=htmlspecialchars($_POST["email"])?>">
               </div>
               <div class="form-group <?=in_array("whyus", $invalid) ? "has-error" : "" ?>">
                 <label for="whyus" class="control-label"><?=$questions["whyus"]?></label>
-                <textarea class="form-control" rows="5" id="whyus" name="whyus" form="join-form"><?=$_POST["whyus"]?></textarea>
+                <textarea class="form-control" rows="5" id="whyus" name="whyus" form="join-form"><?=htmlspecialchars($_POST["whyus"])?></textarea>
               </div>
               <div class="form-group <?=in_array("whyyou", $invalid) ? "has-error" : "" ?>">
                 <label for="whyyou" class="control-label"><?=$questions["whyyou"]?></label>
-                <textarea class="form-control" rows="5" id="whyyou" name="whyyou" form="join-form"><?=$_POST["whyyou"]?></textarea>
+                <textarea class="form-control" rows="5" id="whyyou" name="whyyou" form="join-form"><?=htmlspecialchars($_POST["whyyou"])?></textarea>
               </div>
               <div class="form-group <?=in_array("idea", $invalid) ? "has-error" : "" ?>">
                 <label for="idea"class="control-label"><?=$questions["idea"]?></label>
-                <textarea class="form-control" rows="5" id="idea" name="idea" form="join-form"><?=$_POST["idea"]?></textarea>
+                <textarea class="form-control" rows="5" id="idea" name="idea" form="join-form"><?=htmlspecialchars($_POST["idea"])?></textarea>
               </div>
               <div class="form-group">
                 <label for="sortable" class="control-label"><?=$questions["sortable"]?></label>
@@ -226,13 +226,13 @@
         });
         var datepicker = $("#birthday-picker").data("DateTimePicker");
         <?php if($_POST["birthday"]): ?>
-          datepicker.date(<?='"'.$_POST["birthday"].'"'?>);
+          datepicker.date(<?='"'.htmlspecialchars($_POST["birthday"]).'"'?>);
           datepicker.viewMode("days");
         <?php endif;?>
 
         var sortable = Sortable.create(document.getElementById('sortable'));
         <?php if($_POST["sortable"]): ?>
-          sortable.sort(<?="[".$_POST["sortable"]."]"?>);
+          sortable.sort(<?="[".htmlspecialchars($_POST["sortable"])."]"?>);
         <?php endif;?>
 
         $("#join-form").submit(function(e) {
