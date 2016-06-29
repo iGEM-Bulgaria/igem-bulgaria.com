@@ -209,11 +209,6 @@
             </span><!-- /.social-btn-box -->
           </div>
 
-          <div class="text-center" id="join-banner">
-            <img src="assets/images/flask.png">
-            <span><?=L::home_join?></span>
-          </div>
-
           <div class="next-section">
             <a class="go-to-team"><span></span></a>
           </div><!-- /.next-section -->
