@@ -545,13 +545,13 @@
           $(this).find('strong').text("$" + String((stepValue * materialGoal).toFixed(0)));
       });
       // travel costs counter
-      var travelCost = 0;
+      var travelCost = 150;
       var travelCostGoal = 10000;
       $('#donation-travel').circleProgress({
           value: (travelCost / travelCostGoal),
           size: 120,
           fill: {
-            gradient: ["#DFC92D", "#DFC92D"]
+            gradient: ["#EE3B38", "#DFC92D"]
           }
       }).on('circle-animation-progress', function(event, progress, stepValue) {
           $(this).find('strong').text("$" + String((stepValue * travelCostGoal).toFixed(0)));
