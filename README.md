@@ -26,17 +26,25 @@
     ```
 
     (Note that the document root is in the `/public` subfolder rather than the repo's root)
+
 3. Hostfile (`/etc/hosts`) entry similar to
     ```
     127.0.0.1   igem-bulgaria.dev
-
     ```
+
 4. [Composer](https://getcomposer.org/)
 
     ```
     $ composer install
     ```
-5. (Optional) Clone `deploy-config.example.php` into `deploy-config.php` and edit accordingly, depending on the server you want to deploy on. Upload `deploy-config.php` manually to the server.
+
+5. Write permissions to the `lang/langcache` folder
+
+    ```
+    $ chmod -R 775 lang/langcache
+    ```
+
+6. (Optional) Clone `deploy-config.example.php` into `deploy-config.php` and edit accordingly, depending on the server you want to deploy on. Upload `deploy-config.php` manually to the server.
 
 # Credits
 
