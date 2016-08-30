@@ -4,10 +4,10 @@
   <a href="http://igem-bulgaria.com" align="center"><img src="http://igem-bulgaria.com/assets/images/logo_small.png"/></a>
 </p>
 
-# Development requirements
+# Development requirements and setup:
 
-- PHP `>= 5.2` with the `SPL` extension installed
-- Apache / Ngninx configured similar to:
+1. PHP `>= 5.2` with the `SPL` extension installed
+2. Apache / Ngninx configured similar to:
 
     ```
     <VirtualHost *:80>
@@ -26,7 +26,17 @@
     ```
 
     (Note that the document root is in the `/public` subfolder rather than the repo's root)
-- (Optional) Clone `deploy-config.example.php` into `deploy-config.php` and edit accordingly, depending on the server you want to deploy on. Upload `deploy-config.php` manually to the server.
+3. Hostfile (`/etc/hosts`) entry similar to
+    ```
+    127.0.0.1   igem-bulgaria.dev
+
+    ```
+4. [Composer](https://getcomposer.org/)
+
+    ```
+    $ composer install
+    ```
+5. (Optional) Clone `deploy-config.example.php` into `deploy-config.php` and edit accordingly, depending on the server you want to deploy on. Upload `deploy-config.php` manually to the server.
 
 # Credits
 
