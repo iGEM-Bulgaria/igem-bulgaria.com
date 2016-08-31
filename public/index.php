@@ -545,7 +545,7 @@
           $(this).find('strong').text("$" + String((stepValue * materialGoal).toFixed(0)));
       });
       // travel costs counter
-      var travelCost = 150;
+      var travelCost = 1400;
       var travelCostGoal = 10000;
       $('#donation-travel').circleProgress({
           value: (travelCost / travelCostGoal),
