@@ -459,16 +459,24 @@
                       <p class="member-name"><?=L::contact_members_boris_name?></p>
                       <p class="designation">
                         <?=L::contact_members_boris_role?><br>
+                        <i class="fa fa-phone"></i>&nbsp;&nbsp;<a href="tel:+359889604145">+359889604145</a>
                       </p><!-- /.designation -->
                     </figcaption>
                   </figure>
                   <div class="social-btn-container">
                     <div class="team-socail-btn">
-                      <span class="social-btn-box email-btn-container">
-                        <a href="mailto:boris@igem-bulgaria.com" class="email-btn">
+                      <span class="social-btn-box phone-btn-container">
+                        <a href="tel:+359889604145" class="phone-btn">
+                          <i class="fa fa-phone"></i>
+                        </a><!-- /.phone-btn -->
+                      
+                      </span><!-- /.social-btn-box -->
+                       <span class="social-btn-box email-btn-container">
+                        <a href="mailto:mario@igem-bulgaria.com" class="email-btn">
                           <i class="fa fa-envelope"></i>
                         </a><!-- /.email-btn -->
                       </span><!-- /.social-btn-box -->
+
                     </div><!-- /.team-socail-btn -->
                   </div><!-- /.social-btn-container -->
                 </div><!-- /.team-member -->

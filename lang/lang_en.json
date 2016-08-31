@@ -56,15 +56,15 @@
     "section_name": "Contact",
     "section_title": "Get in touch",
     "section_description": "Feel free to drop us an email at any time on <a href='mailto:team@igem-bulgaria.com'>team@igem-bulgaria.com</a><br>or find us at: <br>",
-    "address": "<address class='text-center'>Technical University of Sofia<br>room 3229<br>1000 Sofia, Bulgaria</address>",
+    "address": "<address class='text-center'><a href='http://sofiatech.bg/en/'>Sofia Tech Park JSC</a><br>BioinfoTech Lab<br>111B Tsarigradsko Shose Blvd<br>1784 Sofia, Bulgaria</address>",
     "members": {
       "mario": {
         "name": "Mario Markov",
-        "role": "Team leader"
+        "role": "Team Captain"
       },
       "boris": {
         "name": "Boris Kirov",
-        "role": "Coach"
+        "role": "Advisor"
       }
     }
   },

@@ -56,15 +56,15 @@
     "section_name": "Контакти",
     "section_title": "Свържете се с нас",
     "section_description": "Не се колебайте да ни пишете по всяко време на <a href='mailto:team@igem-bulgaria.com'>team@igem-bulgaria.com</a><br>или ни намерете в: <br>",
-    "address": "<address class='text-center'>Технически университет София<br>кабинет 3229<br>1000 София, България</address>",
+    "address": "<address class='text-center'><a href='http://sofiatech.bg/'>София Тех Парк</a><br>Лаборатория BioinfoTech<br>бул. Цариградско шосе №111Б<br>1784 София, България</address>",
     "members": {
       "mario": {
         "name": "Марио Марков",
-        "role": "Лидер на отбора"
+        "role": "Капитан на отбора"
       },
       "boris": {
         "name": "Борис Киров",
-        "role": "Треньор"
+        "role": "Ръководител"
       }
     }
   },

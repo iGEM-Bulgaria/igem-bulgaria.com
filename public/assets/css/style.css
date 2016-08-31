@@ -727,12 +727,6 @@ a:focus{
 	left: 122px;
 }
 
-.team-member.boris:hover .social-btn-container .email-btn-container{
-	top: 75px !important;
-	left: 75px !important;
-
-}
-
 .team-container .social-buttons a{
 	color:#fff;
 	width:24px;
