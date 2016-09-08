@@ -308,7 +308,7 @@
           <div >
             <ul id="donation-list">            
                <div class="col-md-4 donationStep" id="done"><i class="fa fa-fw fa-check"></i>2. <?=L::donations_list1?></div>
-               <div class="col-md-4 donationStep" id ="inProgress"><i class="fa fa-fw fa-question"></i>3. <?=L::donations_list2?><br><a href="assets/sources/budjet.xlsx" download="budjet.xlsx"><?=L::donations_budjet?></a></div>
+               <div class="col-md-4 donationStep" id ="inProgress"><i class="fa fa-fw fa-question"></i>3. <?=L::donations_list2?><br><a href="https://onedrive.live.com/view.aspx?resid=53D1B28ED215AEBC!697&ithint=file%2cxlsx&app=Excel&authkey=!AM1Y2PwjkpWWCCU"><?=L::donations_budjet?></a></div>
                <div class="col-md-4 donationStep" id="incomming"><i class="fa fa-fw fa-times"></i>4. <?=L::donations_list3?></div>
             </ul>
           </div>
