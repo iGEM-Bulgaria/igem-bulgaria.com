@@ -237,24 +237,24 @@
           <!-- Team Slider -->
           <div id="carousel">
               <ul class="flip-items">
-                  <li class = "team-photos" data-flip-title="Team1" data-flip-category="Purples">
-                      <img src="assets/images/team/team3.jpg">
-                   </li>
-                  <li class = "team-photos" data-flip-title="Team2" data-flip-category="Purples">
-                      <img src="assets/images/team/team2.jpg">
-                   </li>
-                  <li class = "team-photos" data-flip-title="Team3" data-flip-category="Yellows">
-                      <img src="assets/images/team/team.jpg">
-                  </li>
-                  <li class = "team-photos" data-flip-title="Team4" data-flip-category="Purples">
-                      <img src="assets/images/team/team6.jpg">
-                  </li>
                   <li class = "team-photos" data-flip-title="Team5" data-flip-category="Purples">
                       <img src="assets/images/team/team5.jpg">
                   </li>
                   <li class = "team-photos" data-flip-title="Team6" data-flip-category="Purples">
                       <img src="assets/images/team/team4.jpg">
                   </li>
+                  <li class = "team-photos" data-flip-title="Team3" data-flip-category="Purples">
+                      <img src="assets/images/team/team6.jpg">
+                  </li>
+                  <li class = "team-photos" data-flip-title="Team1" data-flip-category="Yellows">
+                      <img src="assets/images/team/team.jpg">
+                  </li>
+                  <li class = "team-photos" data-flip-title="Team2" data-flip-category="Purples">
+                      <img src="assets/images/team/team2.jpg">
+                   </li>
+                  <li class = "team-photos" data-flip-title="Team4" data-flip-category="Purples">
+                      <img src="assets/images/team/team3.jpg">
+                   </li>
               </ul>
           </div>
 
